@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { brands, site, whatsappUrl } from "../lib/site";
 
 export function Footer() {
@@ -5,10 +6,14 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-ink text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3 md:px-8">
         <div>
-          <p className="font-display text-2xl font-semibold">
-            {site.name}
-          </p>
-          <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/60">
+          <Image
+            src="/logo.png"
+            alt={site.name}
+            width={240}
+            height={80}
+            className="h-16 w-auto object-contain"
+          />
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
             Independent multi-brand washing machine & refrigerator repair and
             service across Bangalore.
           </p>

@@ -35,10 +35,10 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 md:px-8 md:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:py-16">
         <div className="animate-rise">
-          <p className="font-display text-[1.65rem] font-bold leading-[1.15] tracking-tight text-[#0b1c2c] sm:text-4xl md:text-[2.65rem] md:leading-[1.12]">
+          <h1 className="font-display text-[1.65rem] font-bold leading-[1.15] tracking-tight text-[#0b1c2c] sm:text-4xl md:text-[2.65rem] md:leading-[1.12]">
             Refrigerator &amp; Washing Machine Repair Service In{" "}
             <span className="text-[#0b1c2c]">{site.name}</span>
-          </p>
+          </h1>
 
           <p className="mt-4 text-base font-medium text-[#2f6f9f] sm:text-lg">
             Call {site.name} for a flexible deal, Give home a new feel.
