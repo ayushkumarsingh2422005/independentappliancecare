@@ -1,5 +1,5 @@
 import { site, whatsappUrl } from "../lib/site";
-import { QuoteForm } from "./QuoteForm";
+import { ContactCard } from "./ContactCard";
 
 const benefits = [
   "Best price from others | ISO Verified Company",
@@ -68,21 +68,27 @@ export function Hero() {
             ))}
           </ul>
 
-          <a
-            href={whatsappUrl(
-              "Hi, I want a free quote for appliance repair in Bangalore.",
-            )}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2.5 rounded-lg bg-[#25D366] px-5 py-3.5 text-base font-bold text-white shadow-md shadow-[#25D366]/30 transition hover:bg-[#1ebe57]"
-          >
-            <WhatsAppIcon className="h-5 w-5" />
-            Get Your Free Quote Now
-          </a>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href={site.phoneHref}
+              className="inline-flex items-center gap-2 rounded-lg bg-[#1a3a66] px-5 py-3.5 text-base font-bold text-white shadow-md transition hover:bg-[#143054]"
+            >
+              Call {site.phone}
+            </a>
+            <a
+              href={whatsappUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 rounded-lg bg-[#25D366] px-5 py-3.5 text-base font-bold text-white shadow-md shadow-[#25D366]/30 transition hover:bg-[#1ebe57]"
+            >
+              <WhatsAppIcon className="h-5 w-5" />
+              WhatsApp
+            </a>
+          </div>
         </div>
 
         <div className="animate-rise-delay-1">
-          <QuoteForm />
+          <ContactCard />
         </div>
       </div>
     </section>
